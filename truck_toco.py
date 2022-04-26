@@ -6,3 +6,5 @@ print("A capacidade maxima do Truck toco e de:", carga_toco, ", com um volume de
 volume_pacote = float(input("Entre com o volume do pacote em metros:"))
 peso_pacote = float(input("Entre como peso do pacote em kg:"))
 pacote = (volume_pacote, peso_pacote)
+capacidade_rest  =(volume_toco - volume_pacote, carga_toco - peso_pacote)
+print("Anda restam ", capacidade_rest, " de capacidade de carga")
