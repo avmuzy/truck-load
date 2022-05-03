@@ -12,4 +12,5 @@ volume_carreta =(18.15*2.6*4.4)
 carga_carreta = 33000
 carreta = (volume_carreta < 207.63), (carga_carreta < 33000)
 
-
+if peso <= 3000 and volume < 55.44:
+    print(' Usar truck VUC')
