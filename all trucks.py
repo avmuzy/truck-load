@@ -7,3 +7,6 @@ carga_toco = 6000
 trucktoco = (volume_toco < 160.16), (carga_toco < 6000)
 
 volume_carreta =(18.15*2.6*4.4)
+carga_carreta = 33000
+carreta = (volume_carreta <207.63), (carga_carreta < 33000)
+
