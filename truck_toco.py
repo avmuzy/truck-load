@@ -11,5 +11,10 @@ volume_rest = (((volume_toco-volume_pacote)*100)/volume_toco)
 carga_rest = (((carga_toco-peso_pacote)*100)/carga_toco)
 perc_volume = ((volume_pacote*100)/volume_toco)
 perc_peso = ((peso_pacote*100)/carga_toco)
-print('Ainda restam {:.2f}% de area util e {:.2f}% de capacidade de carga'.format(volume_rest, carga_rest))
-print('O pacote equivale a {:.2f}% da capcidade volumetrica e {:.2f}% da capacidade de carga'.format(perc_volume, perc_peso))
+
+print('O pacote equivale a {:.2f}% da capcidade volumetrica e {:.2f}% da capacidade de carga'
+      .format(perc_volume, perc_peso))
+if volume_pacote > volume_toco:
+    print('\033[0:31m O pacote excede a capacidade de carga em {:.2f}%\033[m'.format(abs(volume_rest)))
+else:
+    print('Ainda restam {:.2f}% de area util e {:.2f}% de capacidade de carga'.format(volume_rest, carga_rest))
