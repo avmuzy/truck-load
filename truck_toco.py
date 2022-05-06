@@ -20,4 +20,4 @@ else:
     print('Ainda restam {:.2f}% de area util e {:.2f}% de capacidade de carga'.format(volume_rest, carga_rest))
 
 if peso_pacote > carga_toco:
-    print('\033[0:31m O pacote excede o volume de carga em {:.2f}%\033[m'.format(abs(carga_rest)))
+    print('\033[0:31m O pacote excede a capacidade de carga em {:.2f}%\033[m'.format(abs(carga_rest)))
