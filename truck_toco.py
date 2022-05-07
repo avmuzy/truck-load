@@ -4,10 +4,14 @@ trucktoco = (volume_toco < 160.16), (carga_toco < 6000)
 print('-' *80)
 print("A capacidade maxima do Truck toco e de:", carga_toco, ", com um volume de:", volume_toco)
 print('-' *80)
+
 volume_pacote = 0
 peso_pacote = 0
-volume_pacote = float(input("Entre com o volume do pacote em metros:"))
-peso_pacote = float(input("Entre como peso do pacote em kg:"))
+while peso_pacote < carga_toco and volume_pacote < volume_toco:
+    print('\033[37m=' * 40, '\033[m')
+    volume_pacote = float(input("Entre com o volume do pacote em metros:"))
+    peso_pacote = float(input("Entre como peso do pacote em kg:"))
+
 pacote = (volume_pacote, peso_pacote)
 capacidade_rest = (volume_toco - volume_pacote, carga_toco - peso_pacote)
 volume_rest = (((volume_toco-volume_pacote)*100)/volume_toco)
