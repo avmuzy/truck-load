@@ -7,10 +7,12 @@ print('-' *80)
 
 volume_pacote = 0
 peso_pacote = 0
-while peso_pacote < carga_toco and volume_pacote < volume_toco:
+r = 'S'
+while r == 'S' or peso_pacote < carga_toco and volume_pacote < volume_toco:
     print('\033[37m=' * 40, '\033[m')
     volume_pacote = float(input("Entre com o volume do pacote em metros:"))
     peso_pacote = float(input("Entre como peso do pacote em kg:"))
+    r = str(input('Deseja inserir outro pacote? [S/N]')).strip().upper()
 
 pacote = (volume_pacote, peso_pacote)
 capacidade_rest = (volume_toco - volume_pacote, carga_toco - peso_pacote)
