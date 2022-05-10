@@ -14,3 +14,7 @@ carreta = (volume_carreta < 207.63), (carga_carreta < 33000)
 
 if peso <= 3000 and volume < 55.44:
     print(' Usar truck VUC')
+
+elif 3000 < peso <= 600 and 55.44 < volume < 160.16:
+    print('Usar truck Toco')
+
