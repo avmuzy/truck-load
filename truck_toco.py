@@ -12,8 +12,14 @@ r = 'S'
 while r == 'S' and peso_pacote < carga_toco and volume_pacote < volume_toco:
     print('\033[37m=' * 40, '\033[m')
     volume_pacote = float(input("Entre com o volume do pacote em metros:"))
+    somavolume += volume_pacote
+    cont += 1
     peso_pacote = float(input("Entre como peso do pacote em kg:"))
-    r = str(input('Deseja inserir outro pacote? [S/N]')).strip().upper()
+    somapeso += peso_pacote
+    if peso_pacote < carga_toco:
+        r = str(input('Deseja inserir outro pacote? [S/N]')).strip().upper()
+    if somavolume > volume_toco:
+        print('\033[31m Limite de volume excedido em {}m2!\033[m'.format(somavolume - volume_toco))
 
 pacote = (volume_pacote, peso_pacote)
 capacidade_rest = (volume_toco - volume_pacote, carga_toco - peso_pacote)
