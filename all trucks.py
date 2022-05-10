@@ -1,3 +1,4 @@
+
 peso = float(input('Entre com o peso da carga:'))
 volume = float(input('Entre com o volume da carga:'))
 volume_vuc = (7.2*2.2*3.5)
