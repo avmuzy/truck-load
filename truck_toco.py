@@ -22,6 +22,7 @@ while r == 'S' and peso_pacote < carga_toco and volume_pacote < volume_toco:
         print('\033[31m Limite de volume excedido em {}m2!\033[m'.format(somavolume - volume_toco))
     if somapeso > carga_toco:
         print('\033[31m Limite de carga excedido em {}Kg\033[m'.format(somapeso - carga_toco))
+print('Foram inseridos {} pacotes com um total de {}Kg em {}m2.'.format(cont, somapeso, somavolume))
 
 pacote = (volume_pacote, peso_pacote)
 capacidade_rest = (volume_toco - volume_pacote, carga_toco - peso_pacote)
