@@ -25,3 +25,12 @@ while r == 'S' and peso_pacote < carga_vuc and volume_pacote < volume_vuc:
         print('\033[31m Limite de volume excedido em {:.2f}m2!\033[m'.format(somavolume - volume_vuc))
     if somapeso > carga_vuc:
         print('\033[31m Limite de carga excedido em {}Kg\033[m'.format(somapeso - carga_vuc))
+
+print('Foram inseridos {} pacotes com um total de {:.2f}Kg em {:.2f}m2.'.format(cont, somapeso, somavolume))
+
+pacote = (volume_pacote, peso_pacote)
+capacidade_rest = (volume_vuc - volume_pacote, carga_vuc - peso_pacote)
+volume_rest = (((volume_vuc-volume_pacote)*100)/volume_vuc)
+carga_rest = (((carga_vuc-peso_pacote)*100)/carga_vuc)
+perc_volume = ((volume_pacote*100)/volume_vuc)
+perc_peso = ((peso_pacote*100)/carga_vuc)
