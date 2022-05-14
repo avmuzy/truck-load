@@ -11,6 +11,8 @@ opcao = int(input('Entre com a opcao desejada:'))
 if opcao == 4:
     peso = float(input('Entre com o peso da carga:'))
     volume = float(input('Entre com o volume da carga:'))
+
+
     volume_vuc = (7.2*2.2*3.5)
     carga_vuc = 3000
     truck_vuc = (volume_vuc < 55.44), (carga_vuc < 3000)
@@ -32,3 +34,18 @@ if opcao == 4:
     elif 600 < peso <= 33000 or 160.16 < volume <= 207.63:
         print('Usar Carreta')
 
+    print('''\033[32m
+    [1] Voltar ao menu incial
+    [2] Sair''')
+    opcao2 = int(input('[1 ou 2]\033[m'))
+    if opcao2 == 1:
+        print('volta menu')
+
+if opcao == 1:
+    from truck_VUC import *
+
+if opcao == 2:
+    from truck_toco import *
+
+if opcao ==3:
+    from truck_carreta import *
