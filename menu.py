@@ -40,6 +40,7 @@ if opcao == 4:
 opcao2 = int(input('[1 ou 2]\033[m'))
 if opcao2 == 1:
     from menu import *
+else:exit()
 
 
 
