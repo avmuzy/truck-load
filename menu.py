@@ -1,3 +1,10 @@
+print('MENU PRINCIPAL')
+print('=' * 40)
+print( '''Escolha o veiculo que pretende utilizar:
+\033[32m[1] VUC
+[2] Toco (2 eixos)
+[3] Carreta
+[4] Entrar com o peso(Kg) e o volumme(m2)\033[m ''')
 
 peso = float(input('Entre com o peso da carga:'))
 volume = float(input('Entre com o volume da carga:'))
