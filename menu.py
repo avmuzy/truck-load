@@ -35,11 +35,13 @@ if opcao == 4:
         print('Usar Carreta')
 
     print('''\033[32m
-    [1] Voltar ao menu incial
-    [2] Sair''')
-    opcao2 = int(input('[1 ou 2]\033[m'))
-    if opcao2 == 1:
-        print('volta menu')
+[1] Voltar ao menu incial
+[2] Sair''')
+opcao2 = int(input('[1 ou 2]\033[m'))
+if opcao2 == 1:
+    from menu import *
+
+
 
 if opcao == 1:
     from truck_VUC import *
