@@ -33,7 +33,7 @@ perc_peso = ((peso_pacote*100)/carga_toco)
 
 print(f'Os pacotes equivalem a {perc_volume:.2f}% da capcidade volumetrica e {perc_peso:.2f}% da capacidade de carga')
 if volume_pacote > volume_toco:
-    print('\033[0:31m O pacote excede o volume de carga em {:.2f}%\033[m'.format(abs(volume_rest)))
+    print(f'\033[0:31m O pacote excede o volume de carga em {abs(volume_rest):.2f}%\033[m')
 else:
     print(f'Ainda restam {volume_rest:.2f}% de area util e {carga_rest:.2f}% de capacidade de carga')
 
