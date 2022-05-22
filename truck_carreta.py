@@ -18,7 +18,7 @@ while r == 'S' and peso_pacote < carga_carreta and volume_pacote < volume_carret
     if peso_pacote < carga_carreta:
         r = str(input('Deseja inserir outro pacote? [S/N]')).strip().upper()
         if somavolume > volume_carreta:
-            print('\033[31m Limite de volume excedido em {}m2!\033[m'.format(somavolume - volume_carreta))
+            print(f'\033[31m Limite de volume excedido em {somavolume-volume_carreta}m2!\033[m')
         if somapeso > carga_carreta:
             print('\033[31m Limite de carga excedido em {}Kg\033[m'.format(somapeso - carga_carreta))
     print(f'Foram inseridos {cont} pacotes com um total de {somapeso}Kg em {somavolume}m2.')
