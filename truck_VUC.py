@@ -20,9 +20,8 @@ while r == 'S' and peso_pacote < carga_vuc and volume_pacote < volume_vuc:
     if peso_pacote < carga_vuc:
         r = str(input('Deseja inserir outro pacote? [S/N]')).strip().upper()
 
-
     if somavolume > volume_vuc:
-        print('\033[31m Limite de volume excedido em {:.2f}m2!\033[m'.format(somavolume - volume_vuc))
+        print(f'\033[31m Limite de volume excedido em {somavolume-volume_vuc:.2f}m2!\033[m')
     if somapeso > carga_vuc:
         print(f'\033[31m Limite de carga excedido em {somapeso - carga_vuc}Kg\033[m')
 
