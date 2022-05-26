@@ -25,7 +25,7 @@ while r == 'S' and peso_pacote < carga_vuc and volume_pacote < volume_vuc:
     if somapeso > carga_vuc:
         print(f'\033[31m Limite de carga excedido em {somapeso - carga_vuc}Kg\033[m')
 
-print('Foram inseridos {} pacotes com um total de {:.2f}Kg em {:.2f}m2.'.format(cont, somapeso, somavolume))
+print(f'Foram inseridos {cont} pacotes com um total de {somapeso:.2f}Kg em {somavolume:.2f}m2.')
 
 pacote = (volume_pacote, peso_pacote)
 capacidade_rest = (volume_vuc - volume_pacote, carga_vuc - peso_pacote)
