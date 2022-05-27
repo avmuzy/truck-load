@@ -5,7 +5,7 @@ print( '''Escolha o veiculo que pretende utilizar:
 [2] Toco (2 eixos)
 [3] Carreta
 [4] Entrar com o peso(Kg) e o volumme:(m2)
-[5] Entrada automatica de dados:
+
 \033[m ''')
 
 opcao = int(input('Entre com a opcao desejada:'))
