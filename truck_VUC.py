@@ -34,8 +34,7 @@ carga_rest = (((carga_vuc-peso_pacote)*100)/carga_vuc)
 perc_volume = ((volume_pacote*100)/volume_vuc)
 perc_peso = ((peso_pacote*100)/carga_vuc)
 
-print('Os pacotes equivalem a {:.2f}% da capcidade volumetrica e {:.2f}% da capacidade de carga'
-      .format(perc_volume, perc_peso))
+print(f'Os pacotes equivalem a {perc_volume:.2f}% da capcidade volumetrica e {perc_peso:.2f}% da capacidade de carga')
 if volume_pacote > volume_vuc:
     print(f'\033[0:31m O pacote excede o volume de carga em {abs(volume_rest):.2f}%\033[m')
 else:
