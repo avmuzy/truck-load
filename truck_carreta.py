@@ -35,7 +35,7 @@ print('Os pacotes equivalem a {:.2f}% da capcidade volumetrica e {:.2f}% da capa
 if volume_pacote > volume_carreta:
     print(f'\033[0:31m O pacote excede o volume de carga em {abs(volume_rest):.2f}%\033[m')
 else:
-    print('Ainda restam {:.2f}% de area util e {:.2f}% de capacidade de carga'.format(volume_rest, carga_rest))
+    print(f'Ainda restam {volume_rest:.2f}% de area util e {carga_rest:.2f}% de capacidade de carga'.format(volume_rest, carga_rest))
 
 if peso_pacote > carga_carreta:
     print(f'\033[0:31m O pacote excede a capacidade de carga em {abs(carga_rest):.2f}%\033[m')
