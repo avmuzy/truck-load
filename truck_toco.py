@@ -5,7 +5,7 @@ print('-' *80)
 print("A capacidade maxima do Truck toco e de:", carga_toco, ", com um volume de:", volume_toco)
 print('-' *80)
 
-volume_pacote = peso_pacote  = somapeso = somavolume =0
+volume_pacote = peso_pacote = somapeso = somavolume =0
 cont = 1
 r = 'S'
 
